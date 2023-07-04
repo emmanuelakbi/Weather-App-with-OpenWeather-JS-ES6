@@ -3,34 +3,37 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    - FontAwesome Fonts
+   -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <!--
+    - Custom CSS
+   -->
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
-  <div class="app">
-    <h1>Weather App</h1>
-
-    <header>
-      <input type="text" autocomplete="off" class="search-box" placeholder="Search for your city..." />
-      <button class="button"><i class="fa fa-search"></i></button>
-    </header>
-
-    <main>
-      <section class="location">
-        <div class="city"></div>
-        <div class="date"></div>
-      </section>
-
-      <div class="current">
-        <div class="temp"><span></span></div>
-        <div class="weather"></div>
-      </div>
-    </main>
-  </div>
+  <main class="weather">
+    <div class="weather-heading">
+      <h1 class="weather__heading-title">Weather App</h1>
+    </div>
+    <div class="weather__input">
+      <input type="text" autocomplete="off" class="weather__input-searchBox" placeholder="Search for your city... ">
+      <button class="weather__input-button"><i class="fa fa-search"></i></button>
+    </div>
+    <div class="weather__details">
+      <div class="weather__details-city"></div>
+      <div class="weather__details-date"></div>
+      <div class="weather__details-temp"></div>
+      <div class="weather__details-description"></div>
+    </div>
+  </main>
+  <!--
+    - Custom JS
+  -->
   <script src="script.js"></script>
 </body>
 
